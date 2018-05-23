@@ -1,5 +1,5 @@
 # Label
-自定义标签插件、可删除、可添加
+Custom tags, deletions, and additions
 
 <div class="initClass tab-box clearfix">
     <div class="tab-view fl clearfix"> </div>
