@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>自定义标签插件</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/wm.tab.css" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/wm.tab.js"></script>
+</head>
+
+<body>
+
+    <div class="initClass tab-box clearfix">
+        <div class="tab-view fl clearfix"> </div>
+        <div class="tab-add fl">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+        </div>
+        <div class="tab-alert">
+            <div class="tab-alert-view clearfix">
+                <input class="tab-input fl" type="text" value="" placeholder="请输入标签名">
+                <input class="tab-submit fl" type="submit" value="确定">
+            </div>
+        </div>
+    </div>
+
+    <div class="initClasswm tab-box clearfix">
+        <div class="tab-view fl clearfix"> </div>
+        <div class="tab-add fl">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+        </div>
+        <div class="tab-alert">
+            <div class="tab-alert-view clearfix">
+                <input class="tab-input fl" type="text" value="" placeholder="请输入标签名">
+                <input class="tab-submit fl" type="submit" value="确定">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var arr = ['标签一', '标签二'];
+        $('.initClass').wmTab( arr );
+
+        $('.initClasswm').wmTab();
+    </script>
+</body>
+</html>
