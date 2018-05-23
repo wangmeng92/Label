@@ -1,0 +1,187 @@
+html {
+  /*谷歌浏览器字体最小字体12px*/
+  -webkit-text-size-adjust: 100%;
+  /*100%/none 关闭字体大小自动调整功能*/
+  /*a标签及拥有 :active伪类的元素有默认的高亮框*/
+  -webkit-tap-highlight-color: transparent;
+  /*禁止文本被选中*/
+  -webkit-user-select: none;
+  width: 100%;
+}
+
+body,div,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,select,option,
+table,tr,th,td,span,i,em,audio,video,img,section,article,a,font {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 0;
+  vertical-align: baseline;
+  background: transparent;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body,html,input {
+  font-family: "PingFangSC-Regular", "Microsoft YaHei", "SimHei", "PMingLiU", Arial, "Lucida Grande", sans-serif, "STHeiti Light";
+}
+
+/*清除浮动*/
+.clearfix:after {
+  content: ".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+.clearfix {
+  zoom:1;
+}
+/*左浮动*/
+.fl{
+  float:left;
+}
+/*右浮动*/
+.fr{
+  float:right;
+}
+
+
+.wm-label-box{
+    font-size: 16px;
+    color: #666;
+}
+.wm-label-item{
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px 25px 10px 15px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.wm-label-item .wm-label-close{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .5s;
+}
+.wm-label-item .wm-label-close .line{
+    position: absolute;
+    top: 6px;
+    right: 2px;
+    width: 10px;
+    height: 1px;
+    background-color: #aaa;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+}
+.wm-label-item .wm-label-close .line1{
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+}
+.wm-label-item .wm-label-close .line2{
+    transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+}
+.wm-label-item .wm-label-close:hover{
+    cursor: pointer;
+    transform: scale( 1.1, 1.1 );
+}
+.wm-label-add{
+    position: relative;
+    border: 1px solid blue;
+    width: 43px;
+    height: 43px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+.wm-label-add .line{
+    position: absolute;
+    top: 19px;
+    left: 7px;
+    width: 26px;
+    height: 2px;
+    background-color: #aaa;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.wm-label-add .line2{
+    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+}
+
+.wm-label-alert{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba( 0, 0, 0, .5 );
+}
+.wm-label-alert-view{
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    margin-left: -210px;
+    width: 420px;
+    height: 120px;
+    padding: 40px 0;
+    background-color: rgba( 255, 255, 255, .9 );
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.wm-label-alert-view input{
+    height: 40px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.wm-label-alert-view input[type="text"]{
+    width: 280px;
+    padding: 0 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.wm-label-alert-view input[type="submit"]{
+    width: 80px;
+}

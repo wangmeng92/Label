@@ -5,47 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>自定义标签插件</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/wm.tab.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/wm.label.css" />
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/wm.tab.js"></script>
+    <script src="js/wm.label.js"></script>
 </head>
 
 <body>
-
-    <div class="initClass tab-box clearfix">
-        <div class="tab-view fl clearfix"> </div>
-        <div class="tab-add fl">
+    <div class="initClass wm-label-box clearfix">
+        <div class="wm-label-view fl clearfix"> </div>
+        <div class="wm-label-add fl">
             <div class="line line1"></div>
             <div class="line line2"></div>
         </div>
-        <div class="tab-alert">
-            <div class="tab-alert-view clearfix">
-                <input class="tab-input fl" type="text" value="" placeholder="请输入标签名">
-                <input class="tab-submit fl" type="submit" value="确定">
+        <div class="wm-label-alert">
+            <div class="wm-label-alert-view clearfix">
+                <input class="wm-label-input fl" type="text" value="" placeholder="请输入标签名">
+                <input class="wm-label-submit fl" type="submit" value="确定">
             </div>
         </div>
     </div>
 
-    <div class="initClasswm tab-box clearfix">
-        <div class="tab-view fl clearfix"> </div>
-        <div class="tab-add fl">
+    <div class="initClasswm wm-label-box clearfix">
+        <div class="wm-label-view fl clearfix"> </div>
+        <div class="wm-label-add fl">
             <div class="line line1"></div>
             <div class="line line2"></div>
         </div>
-        <div class="tab-alert">
-            <div class="tab-alert-view clearfix">
-                <input class="tab-input fl" type="text" value="" placeholder="请输入标签名">
-                <input class="tab-submit fl" type="submit" value="确定">
+        <div class="wm-label-alert">
+            <div class="wm-label-alert-view clearfix">
+                <input class="wm-label-input fl" type="text" value="" placeholder="请输入标签名">
+                <input class="wm-label-submit fl" type="submit" value="确定">
             </div>
         </div>
     </div>
 
     <script>
         var arr = ['标签一', '标签二'];
-        $('.initClass').wmTab( arr );
+        $('.initClass').wmLabel( arr );
 
-        $('.initClasswm').wmTab();
+        $('.initClasswm').wmLabel();
     </script>
 </body>
 </html>
