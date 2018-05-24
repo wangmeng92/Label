@@ -1,6 +1,7 @@
 # Label
 Custom tags, deletions, and additions
 
+```html
 <div class="initClass tab-box clearfix">
     <div class="tab-view fl clearfix"> </div>
     <div class="tab-add fl">
@@ -14,6 +15,7 @@ Custom tags, deletions, and additions
         </div>
     </div>
 </div>
+```
 
 PS：
 initClass 自定义类名
